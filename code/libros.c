@@ -15,7 +15,7 @@ int main(void)
         return 1;
     }
 
-    libros_disponibles = libros_iniciales + libros_devueltos + libros_prestados;
+    libros_disponibles = libros_iniciales + libros_devueltos - libros_prestados;
 
     printf("Libros disponibles: %d\n", libros_disponibles);
     return 0;
